@@ -1,0 +1,45 @@
+{% extends "template.html" %}
+{% block content %}
+<div>
+    <div>
+        <h3>Sandeep Magar</h3>
+    </div>
+    <div>
+        <ul>Portfolio</ul>
+        <ul>Projects</ul>
+        <ul>Blog</ul>
+        <ul>Contacts</ul>
+        <ul>Search</ul>
+    </div>
+</div>        
+</head>
+<body>
+<div>
+    <div>Image</div>
+    <div>
+        <h2>Biography</h2>
+    </div>
+</div>    
+<div>
+    <h2>Skills</h2>
+    <p>skill1</p>
+    <p>skill2</p>
+</div>
+<div>
+    <h2>Experience</h2>
+    <p>Experience 1</p>
+    <p>Experience 1</p>
+    <p>Experience 1</p>
+</div>
+</body>
+{% endblock %}
+
+<html>
+    <head>This is Template heading</head>
+    <body>
+        <h1> This heading should not be in child</h1>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+{% end block %}
